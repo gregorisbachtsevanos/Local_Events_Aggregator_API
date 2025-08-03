@@ -1,5 +1,5 @@
 from pydantic import BaseModel
-from typing import List, Optional
+from typing import Optional
 from datetime import datetime
 
 class Event(BaseModel):
@@ -8,6 +8,6 @@ class Event(BaseModel):
     description: Optional[str]
     start_time: datetime
     end_time: Optional[datetime]
-    location: Optional[str]
+    location: dict  # e.g. {"address": ... , "latitude": ..., "longitude": ...}
     category: Optional[str]
-    source: str  # Which source this came from
+    source: str
