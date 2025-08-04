@@ -18,13 +18,13 @@ A FastAPI-powered backend service that aggregates local events from real-world s
 
 ##  Project Structure
 
-local_events_api/
+local_events_api/\
 │
-├── main.py # FastAPI app
-├── models.py # Pydantic models
-├── aggregator.py # Core event combiner
-├── sources/
-│ ├── eventbrite_source.py # Eventbrite adapter
+├── main.py # FastAPI app\
+├── models.py # Pydantic models\
+├── aggregator.py # Core event combiner\
+├── sources/\
+│ ├── eventbrite_source.py # Eventbrite adapter\
 │ └── predicthq_source.py # PredictHQ adapter
 
 
