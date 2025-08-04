@@ -104,13 +104,6 @@ GET /events?lat=40.64&lon=22.94&radius_km=15&start=2025-08-01T00:00:00Z&end=2025
 ]
 ```
 
- Extensions
- -Add support for more APIs (Meetup, Ticketmaster)
- -Add geospatial radius filter to custom sources
- -Cache or store data in SQLite or Redis
- -Allow users to POST their own events
- -Add recurring fetch jobs with Celery or cron
-
  🙋 FAQ
 ```
 Q: Why doesn't it show events in my area?
@@ -120,3 +113,12 @@ Q: Do I need to pay for PredictHQ?
 Q: Is this production-ready?
   It’s a great base, but would benefit from rate-limiting, retries, error handling, and persistence before production use.
 ```
+
+
+<!--
+-Rate limiting & caching: store recent responses to reduce API calls.
+-Deduplication: avoid overlapping events between sources.
+-More filters: text search, free vs paid, category tags.
+-Exposing metadata: let users retrieve full details or venue info.
+- Add support for more APIs (Meetup)
+-->
