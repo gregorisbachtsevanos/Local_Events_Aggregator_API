@@ -27,7 +27,6 @@ local_events_api/\
 │ ├── eventbrite_source.py # Eventbrite adapter\
 │ └── predicthq_source.py # PredictHQ adapter
 
-
 ---
 
 ## Requirements
